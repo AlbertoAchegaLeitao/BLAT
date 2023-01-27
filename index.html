@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b5e3763c23.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>News Gallery</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrapper">
+            <h1 class="navbar__logo">News Gallery</h1>
+            <h1 class="navbar__logo2">NG</h1>
+            <i class="fa-solid fa-bars navbar__hamburguer" id="hamburguer"></i>
+            <ul class="navbar__menu" id="navbarmenu">
+              <li><a href="#" class="menuitem">Start</a></li>
+              <li><a href="#gallery" class="menuitem">News</a></li>
+              <li><a href="#footer" class="menuitem">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Opinions Modal -->
+
+    <!-- Hero -->
+    <div class="slider">
+      <div class="slider__carousel" data-carousel>
+        <button
+          class="slider__carousel-button prev"
+          data-carousel-button="prev"
+        >
+          &#8656;
+        </button>
+        <button
+          class="slider__carousel-button next"
+          data-carousel-button="next"
+        >
+          &#8658;
+        </button>
+        <ul data-slides>
+          <li class="slider__slide" data-active>
+            <img
+              src="https://images.unsplash.com/photo-1674458884347-0b5460be866b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+              alt="image 1"
+            />
+            <h2 class="slidertext">
+              <a href="http://127.0.0.1:5501/opennews.html">New Destinations</a>
+            </h2>
+          </li>
+          <li class="slider__slide">
+            <img
+              src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="image2"
+            />
+            <h2 class="slidertext">New Technology Keeps Coming</h2>
+          </li>
+          <li class="slider__slide">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1663099231979-8783a39dfad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="image3"
+            />
+            <h2 class="slidertext">New Musci Program for Kids</h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- API -->
+    <div class="api" id="newsapi">
+      <div class="api__wrapper" id="articlewrapper"></div>
+    </div>
+    <div class="aside-gallery">
+      <div class="bellownav-container">
+        <!-- NEWS GALLERY -->
+        <div class="gallery" id="gallery">
+          <div class="container">
+            <h2 class="gallery__tittle">More News</h2>
+            <div class="gallery__wrapper">
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/animals"
+                  alt="news image 1"
+                />
+                <h3>Animals are smarter than we think.</h3>
+                <p class="gallery__p" id="p1">
+                  They are smarter then we think. However you need to keep them
+                  active so their brains can keep exercising.
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/peole"
+                  alt="news image 1"
+                />
+                <h3>People doing amazing things</h3>
+                <p class="gallery__p" id="p2">
+                  People can do all shorts of dumb things, but they can also
+                  make amazing things.
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/tech"
+                  alt="news image 1"
+                />
+                <h3>Inovative Tech</h3>
+                <p class="gallery__p" id="p3">
+                  How inovative tech can change the world
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/nature"
+                  alt="news image 1"
+                />
+                <h3>More sights to see</h3>
+                <p class="gallery__p" id="p4">
+                  Top 10 vacations categorized by city, nature, beach, etc.
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/animals"
+                  alt="news image 1"
+                />
+                <h3>Animals going viral</h3>
+                <p class="gallery__p" id="p5">
+                  Animals beinmg hella cute and human like.
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/people"
+                  alt="news image 1"
+                />
+                <h3>They are at it again</h3>
+                <p class="gallery__p" id="p6">
+                  Here we go again, Sporting go back to losing just like old
+                  times
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/tech"
+                  alt="news image 1"
+                />
+                <h3>New AI amazes people by how it can't do anything</h3>
+                <p class="gallery__p">
+                  Ancient techology and how it can still be used as an advantage
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+              <div class="gallery__news">
+                <img
+                  src="https://placeimg.com/300/300/people"
+                  alt="news image 1"
+                />
+                <h3>Here we go again, another war</h3>
+                <p class="gallery__p">
+                  Well, I guess it's human natura. War, war, war...
+                </p>
+                <a class="gallery__a" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aside" id="opinions">
+          <div class="aside__wrapper">
+            <h2>Opinions</h2>
+            <div class="aside__opinions">
+              <div class="aside__opinion">
+                <img
+                  class="aside__image"
+                  src="https://randomuser.me/api/portraits/men/4.jpg"
+                  alt="opinion image"
+                />
+                <div class="aside__text">
+                  <p>Talking without saying anything</p>
+                  <a
+                    href="https://www.google.com/search?gs_ssp=eJzj4tFP1zcsNM0yqrCorDRg9GIvObxZoerwSgBXawhj&q=t%C3%B3+z%C3%A9&rlz=1C1FCXM_pt-PTPT959PT959&oq=T%C3%B3+Z%C3%A9&aqs=chrome.0.46i512j69i57j46i10i512l6j0i10i512l2.6000j0j7&sourceid=chrome&ie=UTF-8"
+                    target="_blank"
+                    ><span>- Tó Zé</span></a
+                  >
+                </div>
+
+                <img
+                  class="aside__image"
+                  src="https://randomuser.me/api/portraits/men/25.jpg"
+                  alt="opinion image"
+                />
+                <div class="aside__text">
+                  <p>How to make bread without flour</p>
+
+                  <a
+                    href="https://www.google.com/search?q=andr%C3%A9+andrade&rlz=1C1FCXM_pt-PTPT959PT959&sxsrf=AJOqlzVXJntnIsxpseAyJnj8xlQGeSgxKg%3A1674402413878&ei=bVrNY6eiNZDVkdUPyvi3gAQ&ved=0ahUKEwjnjNyIw9v8AhWQaqQEHUr8DUAQ4dUDCA8&uact=5&oq=andr%C3%A9+andrade&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCC4QgAQyBggAEBYQHjIGCAAQFhAeMggIABAWEB4QCjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKOgQIIxAnOg4ILhCxAxCDARDHARDRAzoRCC4QgwEQxwEQ1AIQsQMQ0QM6CAgAELEDEIMBOgsILhCABBDHARCvAToICC4QsQMQgwE6BAguECc6CwgAEIAEELEDEIMBOgQIABADOgQILhADOgcILhDUAhADOgQILhBDOgsILhCABBCxAxCDAToICC4QgAQQ1AI6DgguEIAEELEDEIMBENQCOgUILhCxAzoICC4QgAQQsQM6CAguEIMBELEDOgoILhCABBCxAxAKOg0ILhCABBCxAxCDARAKOhAILhCABBCxAxCDARDUAhAKOg0IABCABBCxAxCDARAKOgcILhCABBAKOgsILhCxAxCDARDUAjoFCAAQgAQ6BwguEOoCECc6BwgjEOoCECc6CwguEIMBELEDEIAEOggILhCABBDLAToICAAQgAQQywFKBAhBGABKBAhGGABQAFi2RmC2R2gOcAF4AIABkQGIAfsKkgEDNS44mAEAoAEBsAEKwAEB&sclient=gws-wiz-serp"
+                    target="_blank"
+                    ><span>- André Andrade</span></a
+                  >
+                </div>
+                <img
+                  class="aside__image"
+                  src="https://randomuser.me/api/portraits/women/30.jpg"
+                  alt="opinion image"
+                />
+                <div class="aside__text">
+                  <p>Cross stitch, dressmaker' art</p>
+
+                  <a
+                    href="https://www.google.com/search?q=miclina+jo%C3%A3o&rlz=1C1FCXM_pt-PTPT959PT959&sxsrf=AJOqlzU-zjnqVNZ75WhEsUA84Sd1Cv1qZw%3A1674402472605&ei=qFrNY8u5JKKjkdUPxbaksAM&ved=0ahUKEwjLrdykw9v8AhWiUaQEHUUbCTYQ4dUDCA8&uact=5&oq=miclina+jo%C3%A3o&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgcIABAeEKIEMgUIABCiBDoGCAAQBxAeOgcILhANEIAEOggIABAHEB4QCjoHCAAQDRCABDoICAAQCBAeEA06CAgAEAUQHhANSgQIQRgASgQIRhgAUABY7gdg6QhoAHAAeACAAZQBiAHNBpIBAzAuN5gBAKABAcABAQ&sclient=gws-wiz-serp"
+                    target="_blank"
+                    ><span>- Miclina João</span></a
+                  >
+                </div>
+                <img
+                  class="aside__image"
+                  src="https://randomuser.me/api/portraits/women/40.jpg"
+                  alt="opinion image"
+                />
+                <div class="aside__text">
+                  <p>What to do when the cake is still too raw</p>
+
+                  <a
+                    href="https://www.google.com/search?q=manuela+esteves&rlz=1C1FCXM_pt-PTPT959PT959&oq=manuela+esteves&aqs=chrome.0.0i512l2j0i22i30l8.1960j0j9&sourceid=chrome&ie=UTF-8"
+                    target="_blank"
+                    ><span>- Manuela Esteves</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Noticias -->
+    <div class="video">
+      <div class="container">
+        <h2 class="video__tittle">GAMING NEWS TODAY</h2>
+        <div class="video__textbox">
+          <p class="video__text">The game that keeps on giving.</p>
+        </div>
+        <video src="/assets/video/lol.mp4" controls class="video__file"></video>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <h3>Contacts</h3>
+          <div class="footer__themes">
+            <div class="footer__theme">
+              <h4>Sports</h4>
+              <p>Europe</p>
+              <p>World</p>
+            </div>
+            <div class="footer__theme">
+              <h4>Business</h4>
+              <p>Economy</p>
+              <p>Money</p>
+              <p>Companies</p>
+              <p>Real Estate</p>
+            </div>
+            <div class="footer__theme">
+              <h4>Health</h4>
+              <p>Covid-19</p>
+              <p>Healthy Life</p>
+              <p>Mental Health</p>
+            </div>
+            <div class="footer__theme">
+              <h4>Art</h4>
+              <p>Painting</p>
+              <p>Photography</p>
+              <p>Music</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>

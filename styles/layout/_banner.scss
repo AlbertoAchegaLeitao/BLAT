@@ -1,0 +1,159 @@
+.banner {
+
+
+    &__wrapper img {
+        margin-top: 90px;
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.text {
+    &__tittle {
+        padding: 2.5% 5%;
+        font-size: 50px;
+        text-align: center;
+        color: grey;
+    }
+
+    &__span {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__spanitem {
+
+        color: black;
+        padding: 0 10px;
+
+
+    }
+
+    &__summary {
+
+
+        padding: 30px 0;
+        font-size: 25px;
+    }
+
+    &__summary strong {
+        color: grey;
+
+    }
+
+    &__subtittle {
+        font-size: 30PX;
+        padding-bottom: 10px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+
+    }
+
+    &__body {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__bodycontainer {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+    }
+
+    &__share {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    &__share h3 {
+        font-size: 25px;
+    }
+
+    &__sharebtn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__sharebtn a {
+        text-decoration: none;
+        color: white;
+        background-color: blue;
+        padding: 10px;
+        border-radius: 30%;
+        margin-left: 15px;
+        display: flex;
+    }
+
+    &__next {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__nexttext {
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    &__next:hover,
+    &__previous:hover {
+        color: rgb(184, 184, 184);
+    }
+
+    &__previous {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__previoustext {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    &__previous-next {
+        margin-bottom: 35px;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__buttonwrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__readmore {
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+
+    &__readmore:hover {
+        background-color: rgba(0, 0, 0, .2);
+        border-color: rgba(0, 0, 0, .1);
+
+    }
+}
+
+.readless {
+    display: none;
+}
+
+.readless.active {
+    display: inline-block;
+}
+
+#span1,
+#span2 {
+    border-left: 1px solid black;
+}

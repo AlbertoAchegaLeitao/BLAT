@@ -1,0 +1,56 @@
+.api {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 400px;
+
+    &__wrapper {
+        padding: 0 20%;
+
+    }
+
+    &__tittle {
+        padding-bottom: 30px;
+        font-size: 40px;
+        color: grey;
+    }
+
+    &__text {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__author {
+        font-size: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 1000px) {
+    .api__tittle {
+        font-size: 30px;
+    }
+
+    .api__text {
+        font-size: 20px;
+    }
+
+    .api__author {
+        font-size: 15px
+    }
+}
+
+@media (max-width: 560px) {
+    .api__tittle {
+        font-size: 20px;
+    }
+
+    .api__text {
+        font-size: 15px;
+    }
+
+    .api__author {
+        font-size: 13px
+    }
+}

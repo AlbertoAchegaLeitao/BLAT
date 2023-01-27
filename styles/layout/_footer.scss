@@ -1,0 +1,30 @@
+.footer {
+    background-color: black;
+
+    &__wrapper {
+        padding: 2% 10%;
+        color: white;
+    }
+
+    &__wrapper h3 {
+        padding: 0px 0 20px 0;
+        font-size: 30px;
+    }
+
+    &__themes {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    &__theme h4,
+    p {
+        padding: 5px 0;
+
+    }
+         &__theme h4{
+            font-size: 25px;
+         }
+}

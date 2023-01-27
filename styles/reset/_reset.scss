@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid green; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.aside-gallery {
+    display: flex;
+
+}
+
+.bellownav-container {
+    padding: 0 10%;
+    display: flex;
+}
+.newcontainer{
+    padding: 0 10%;
+}

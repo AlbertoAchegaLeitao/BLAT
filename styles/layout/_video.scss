@@ -1,0 +1,22 @@
+.video {
+
+    padding: 0 10%;
+    background-color: rgb(32, 32, 32);
+
+    &__file {
+        width: 100%;
+    }
+
+    &__tittle {
+        color: white;
+        padding: 25px 0;
+    }
+
+    &__textbox {
+        color: white;
+        font-size: 20px;
+        padding: 25px 25px;
+        position: absolute;
+
+    }
+}

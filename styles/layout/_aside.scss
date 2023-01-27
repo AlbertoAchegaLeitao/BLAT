@@ -1,0 +1,59 @@
+.aside {
+    padding: 50px 0;
+    width: 70%;
+    background-color: beige;
+
+    &__wrapper h2 {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    &__opinion {
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+        align-items: center;
+    }
+
+
+    &__image {
+        max-width: 70px;
+        border-radius: 50%;
+    }
+
+    &__text a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__text a span {
+        display: block;
+        text-align: right;
+
+    }
+}
+
+@media (max-width: 1400px) {
+    .bellownav-container {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+
+    }
+
+    .aside {
+        grid-row: 1;
+        width: 100%;
+    }
+    .aside__wrapper{
+        padding: 0 30%;
+    }
+
+
+
+
+
+}
