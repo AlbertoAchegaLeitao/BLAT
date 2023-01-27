@@ -31,7 +31,7 @@ function updateArticle() {
   fetch(
     "https://newsapi.org/v2/top-headlines?country=pt&apiKey=62d77a21651a4a3291fa03ae11f3e03f"
   )
-    .then((response) => response.json())
+    .then((response) => response.json()) //este transforma a API em json
 
     .then((data) => {
       console.log(data);
